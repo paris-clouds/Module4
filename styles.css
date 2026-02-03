@@ -1,14 +1,15 @@
-h1{color:purple}
+h1{color:rgb(221, 155, 55)}
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f0f0f0;
                 margin: 0;
                 padding: 0;
+                font-size: .5em;
             }
             .container {
                 width: 800px;
                 margin: 0 auto;
-                background-color:blue;
+                background-color:pink;
                 padding: 20px;
             }
             .left{
@@ -19,7 +20,7 @@ h1{color:purple}
                 width:48%;
                 float:right;
             }
-            article p{color: red;
+            article p{color: rgb(216, 117, 37);
             }
             footer{
                 text-align: center;
@@ -28,3 +29,27 @@ h1{color:purple}
                 width: 100%;
                 padding-top: 20px;
             }
+.limelight-regular {
+  font-family: "Limelight", "Times New Roman", "Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+}
+a:active {
+color: maroon;
+}
+
+.funnel-sans-500 {
+  font-family: "Funnel Sans", "Georga", "Courier New", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: lightsalmon;
+}
+a:hover{
+    text-decoration:none;
+    color: orange;
+}
+a:visited{
+    color: white;
+}
