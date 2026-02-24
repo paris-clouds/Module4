@@ -23,7 +23,7 @@
         <h1 class="funnel-sans-500">Cats Can Be Our Best Friends</h1>
         <article class="center" class="limelight-regular"><h2 class="big">Though Independent, They <i>Are</i> Full Of Love</h2></article>
         <h3 class="funnel-sans-500">Cats Like Their Space, But That Doesn't Mean They Don't Love You</h3>
-
+        <p>&ensp;</p>
         <article class="center"><p class="big" style="font-family: 'Courier New', Courier, monospace;">Here are some pictures of cat breeds for <b>first-time</b> cat owners.</p></article>
 <img src="images/ragdoll_cat.jpg" alt="A ragdoll cat laying down" width="300px">       
 <p>Ragdolls are friendly and affectionate, perfect qualities for new owners so you can get to know how cats act.</p>
@@ -33,14 +33,20 @@
   <li>Requires grooming every day</li>
   <li>Sociable and dependent cat</li>
 </ul>
-<a href="https://www.istockphoto.com/photos/domestic-short-hair-cat"><img src="images/short_hair_cat.jpg" alt="An American shorthaired kitten crouching" width="300px"></a>
+<a href="https://www.istockphoto.com/photos/domestic-short-hair-cat"><img src="images/short_hair_cat.jpg" alt="An American shorthaired kitten crouching" width="300px" title="Cat Getty Images"></a>
 <ul class="b">
   <li>Easygoing</li>
   <li>Curious</li>
   <li>Enjoys socializing</li>
 </ul>
-<p title="Cats are so cute">&#128062; American Short hair cats are independent like most cats and can be easy-going. Their short fur is also easy to brush and maintain. Click on the photo for more pictures of short hair cats!&#128062;</p>
-<button type="button" onclick="alert('Even More Facts!')">Click Me!</button>
+<p>&#128062; American Short hair cats are independent like most cats and can be easy-going. Their short fur is also easy to brush and maintain. Click on the photo for more pictures of short hair cats!&#128062;</p>
+<button type="button" onclick="alert('Even More Facts Below!')">Click Me!</button>
+<p>&ensp;</p>
+<p>Listen to relaxing rain before you keep reading!</p>
+<audio controls autoplay>
+  <source src="assets/rain_ambience.mp3" type="audio/mpeg">
+</audio>
+<p>&ensp;</p>
 <p>Here is a <a href="https://manypets.com/uk/articles/the-best-cats-for-first-time-owners/">website</a> to checkout for more types of cat breeds for you first-time cat owners.</p>
     <table class="centerTable">
       <tr>
@@ -74,11 +80,48 @@
         <td>Brown, tan, white, black, red, orange, etc.</td>
       </tr>
     </table>
+    <p>&ensp;</p>
+    <p>Which cat do you like the most so far?:</p>
+     <form id="catbreeds">
+       <input type="radio" id="american_shorthair" name="fav_language" value="American Shorthair">
+       <label for="american_shorthair">American Shorthair</label><br>
+       <input type="radio" id="ragdoll" name="fav_language" value="Ragdoll">
+       <label for="ragdoll">Ragdoll</label><br>
+       <input type="radio" id="scottish_fold" name="fav_language" value="Scottish Fold">
+       <label for="scottish_fold">Scottish Fold</label>
+     </form>
+     <p>Do you have any knowledge or experience with cats? <strong>Whether a little or a lot?:</strong></p>
+<form id="experience">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="no_experience">
+  <label for="vehicle1"> I have no experience</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="some_experience">
+  <label for="vehicle2"> I have some experience</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="a_lot_experience">
+  <label for="vehicle3"> I have a lot of experience</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>&ensp;</p>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid brown;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"rgb(230, 81, 101)");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
     <p>Sources</p>
     <iframe src="images/purina_logo_vec.jpg" height="100" width="300" name="purina_a" title="Purina Logo"></iframe>
-    <p><a href="https://cats.com/cat-breeds-for-first-time-owners">13 Best Cat Breeds for First-Time Owners;</a> <a href="https://www.purina.co.uk/find-a-pet/cat-breeds?page=%2C3" target="purina_a">Purina</a>
+    <p><a href="https://cats.com/cat-breeds-for-first-time-owners">13 Best Cat Breeds for First-Time Owners;</a> <a href="https://www.purina.com/cats" target="purina_a">Purina</a>
 </p>
-,<footer><p>Copyrght Paris Lopez @2026</p></footer>            
+<footer><p>Copyrght Paris Lopez @2026</p></footer>            
         <script src="" async defer></script></div>
     </body>
 </html>
