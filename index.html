@@ -21,8 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <h1 class="funnel-sans-500">Cats Can Be Our Best Friends</h1>
-        <ul>
-  <li><a href="#home">Home</a></li>
+        <ul class="c">
   <li><a href="#services">Services</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about-us">About Us</a></li>
@@ -33,23 +32,58 @@
         <article class="center" class="limelight-regular"><h2 class="big">Though Independent, They <i>Are</i> Full Of Love</h2></article>
         <h3 class="funnel-sans-500">Cats Like Their Space, But That Doesn't Mean They Don't Love You</h3>
         <p>&ensp;</p>
-        <article class="center"><p class="big" style="font-family: 'Courier New', Courier, monospace;">Here are some pictures of cat breeds for <b>first-time</b> cat owners.</p></article>
-<img src="images/ragdoll_cat.jpg" alt="A ragdoll cat laying down" width="300px">       
-<p>Ragdolls are friendly and affectionate, perfect qualities for new owners so you can get to know how cats act.</p>
-<p>Some facts about them &darr;</p>
+        <article class="center"><p class="big" style="font-family: 'Courier New', Courier, monospace;">Here are some pictures of cat breeds for <b>first-time</b> cat owners.</p></article>     
+<div class="flex-containerB">
+  <div><img src="images/ragdoll_cat.jpg" alt="A ragdoll cat laying down" width="250px" id="why-befriend-cats"></div>
+  <div><p>Ragdolls are friendly and affectionate, perfect qualities for new owners so you can get to know how cats act.</a></p>
+<p>Some facts about them &darr;</p></div>
+</div>
+
 <ul class="a">
   <li>Enjoys playing games</li>
   <li>Requires grooming every day</li>
   <li>Sociable and dependent cat</li>
 </ul>
-<a href="https://www.istockphoto.com/photos/domestic-short-hair-cat"><img src="images/short_hair_cat.jpg" alt="An American shorthaired kitten crouching" width="300px" title="Cat Getty Images"></a>
+<div class="flex-container">
+  <div style="flex-grow: 1;"><img src="images/adult_shorthair_cat.jpg" alt="An adult American shorthair cat" width="250px"></div>
+  <div style="flex-grow: 1;"><a href="https://www.istockphoto.com/photos/domestic-short-hair-cat"><img src="images/short_hair_cat.jpg" alt="An American shorthaired kitten crouching" width="250px" title="Cat Getty Images"></a></div>
+</div>
 <ul class="b">
   <li>Easygoing</li>
   <li>Curious</li>
   <li>Enjoys socializing</li>
 </ul>
 <p>&#128062; American Short hair cats are independent like most cats and can be easy-going. Their short fur is also easy to brush and maintain. Click on the photo for more pictures of short hair cats!&#128062;</p>
-<button type="button" onclick="alert('Even More Facts Below!')">Click Me!</button>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div class="accordion" id="accordion">
+  <h3>Why Cats?</h3>
+  <div>
+    <p>
+    Companionship. Having a cat companion gives you a chance to bond and forge a relationship with another being.
+    This can be especially important for people who live alone and experience anxiety.
+    </p>
+  </div>
+  <h3>As Well as</h3>
+  <div>
+    <p>
+    Increased socialization. For some people, socialization can be a stressful experience, leading to an increase in blood pressure and heart rate.
+    They may expect to be judged by others. With cats, however, people can talk freely, without fearing what other people might think.
+    </p>
+  </div>
+</div>
+
+<button type="button" onclick="alert('Even More Facts Below!')">Hello!</button>
 <p>&ensp;</p>
 <p>Listen to relaxing rain before you keep reading!</p>
 <audio controls autoplay>
