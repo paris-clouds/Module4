@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cats Are Wonderful</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,14 +28,19 @@
   <li><a href="#ways-to-support-cats">Ways to Support Cats</a></li>
   <li><a href="#why-befriend-cats">Why Befriend Cats?</a></li>
 </ul>
-
-        <article class="center" class="limelight-regular"><h2 class="big">Though Independent, They <i>Are</i> Full Of Love</h2></article>
+<br>
         <h3 class="funnel-sans-500">Cats Like Their Space, But That Doesn't Mean They Don't Love You</h3>
-        <p>&ensp;</p>
-        <article class="center"><p class="big" style="font-family: 'Courier New', Courier, monospace;">Here are some pictures of cat breeds for <b>first-time</b> cat owners.</p></article>     
+        <p>&ensp;</p><br>
+        <article class="center"><p class="big" style="font-family: 'Courier New', Courier, monospace;">Cats can improve your well-being by providing companionship and reducing loneliness, not to mention giving us a reason to laugh at their playful antics when they have had catnip. 
+          They can also help reduce stress and anxiety, which is especially <b>important</b> for people who live alone.
+         </p></article>     
 <div class="flex-containerB">
-  <div><img src="images/ragdoll_cat.jpg" alt="A ragdoll cat laying down" width="250px" id="why-befriend-cats"></div>
-  <div><p>Ragdolls are friendly and affectionate, perfect qualities for new owners so you can get to know how cats act.</a></p>
+  <div style="flex-grow: 1;"><img src="images/ragdoll_cat.jpg" alt="A ragdoll cat laying down" width="250px" id="why-befriend-cats"></div>
+  <div style="flex-grow: 1;"><img src="images/birman_pink_background.jpg" alt="A Birman cat with a pink background" width="250px"></div>
+  <div><p>Ragdolls and Birman cats are known for their friendly and affectionate nature, making them great companions for new cat owners.
+Interacting with animals has been shown to decrease levels of cortisol (a stress-related hormone) and lower blood pressure.
+Cats can make us feel good and connected since they are more open and curious, and it builds up our capacity for kindness and generosity toward others.
+Even if they also tend to be independent and introverted, they still form strong bonds with their companions.
 <p>Some facts about them &darr;</p></div>
 </div>
 
@@ -83,7 +88,6 @@
   </div>
 </div>
 
-<button type="button" onclick="alert('Even More Facts Below!')">Hello!</button>
 <p>&ensp;</p>
 <p>Listen to relaxing rain before you keep reading!</p>
 <audio controls autoplay>
@@ -145,7 +149,31 @@
 </form>
 <p>&ensp;</p>
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid brown;">
-</canvas>
+</canvas><br>
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
 
 <script>
 var c = document.getElementById("myCanvas");
