@@ -8,7 +8,7 @@ h1{background-color: rgb(230, 81, 101); padding-top: 20px; padding-bottom: 20px;
                 text-align: center;
             }
             .container {
-                width: 800px;
+                width: 1020px;
                 margin: 0 auto;
                 background-color:pink;
                 padding: 20px;
@@ -82,7 +82,7 @@ table {
     height: 300px;
 }
 .centerTable { 
-    margin: 0px auto; 
+    margin: 0 auto; 
 }
 ul.a {
     list-style-type: disc;
@@ -167,52 +167,22 @@ img {
   outline: none;
   font-size: 1.5em;
 }
-  
 * {
     box-sizing: border-box;
 }
-.accordion:after {
-  content: '\002B';
-  color: brown;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+@media (max-width: 1019px) {
+    .container {width: 90%;}
+    .makeMeStack {
+        flex-direction: row;
+        flex: 100%;
+    }
+    .centerTable {
+        width: 100%;
+    }
 }
-.accordion.active:after {
-  content: "\2212";
+@media only screen and (min-width: 768px) {
+    /*tablets and desktops*/
 }
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: rgb(230, 81, 101);
-  overflow: hidden;
+@media only screen and (max-width: 767px) {
+    /*phones*/
 }
-.c {
-    grid-area: c;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(230, 81, 101);
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-}
-@media only screen and (min-width: 600px) {
-  .c {grid-area: 1 / span 6;}
-  .flex-containerB {grid-area: 1 / span 6;}
-  .a {grid-area: 2 / span 1;}
-  .flex-container {grid-area: 2 / span 4;}
-  .b {grid-area: 2 / span 6;}
-  .accordion {grid-area: 3 / span 6;}
-  .centerTable {grid-area: 3 / span 6;}
-  .footer {grid-area: 4 / span 6;}
-  }
-  @media (max-width: 768px) {
-    .c {grid-area: 1 / span 6;}
-    .a {grid-area: 2 / span 1;}
-    .flex-container {grid-area: 2 / span 4;}
-    .b {grid-area: 4 / span 6;}
-    .accordion {grid-area: 2 / span 1;}
-    .centerTable {grid-area: 6 / span 6;}
-    .footer {grid-area: 3 / span 6;}
-  }
